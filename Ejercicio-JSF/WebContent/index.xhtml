@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"     
+      xmlns:h="http://java.sun.com/jsf/html">
+  
+    <h:head>
+        <title>Demo en JSF</title>
+    </h:head>
+    <h:body>
+     <h2>Demo en JSF</h2>
+     <h:form>
+      <h:panelGrid columns="2">
+       <h:outputLabel for="nombre">Nombre:</h:outputLabel>
+         <h:inputText id="txtnombre"  />
+         <h:outputLabel for="txtapellido" >Apellido:</h:outputLabel>
+         <h:inputText  id="txtapellido"  />
+         <h:commandButton value="Aceptar" action="#{saludaUsuarioMB.saludar}" />
+        </h:panelGrid>
+     </h:form>
+    </h:body>
+</html>
